@@ -6,7 +6,7 @@ app = Flask(__name__)
 def home():
     return render_template('calculator.html')
 
-@app.route('/result.html', methods=['POST', 'GET'])
+@app.route('/calculator.html', methods=['POST', 'GET'])
 def calculate():
     value1 = request.form['value1']
     value2 = request.form['value2']
