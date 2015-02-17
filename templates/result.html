@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <title>Web Calculator</title>
+  <head>
+    <body>
+      <div>
+        <h1>Calculator</h1>
+        <h3>Your result is:</h>
+        <p1> {{ result }} </p>
+    <form action="/result" method=['GET', "POST"]>
+        <input type="text" name="value1" value=""{{ result }}"">
+    <form>
+      <div>
+        <select name="operator">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+      <div>
+    <form action="." method="POST">
+        <input type="text" name="value2">
+    </form>
+      <div>
+      <button type="submit">Calculate!</button>
+    </form>
