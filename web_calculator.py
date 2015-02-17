@@ -10,10 +10,10 @@ def home():
 def calculate():
     value1 = request.form['value1']
     value2 = request.form['value2']
-    operator = request.select['operator']
-    result = eval(num_one + operand + num_two)
+    operator = request.form['operator']
+    result = eval(value1 + operator + value2)
 
-    return render_template('result.html'), RESULT=result
+    return render_template('result.html'), result
 
 
 
